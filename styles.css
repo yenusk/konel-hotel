@@ -375,7 +375,7 @@ img {
     margin-bottom: 8px;
     font-weight: 500;
 }
-.form-group label, .uu{
+.form-group .uu{
     color: hwb(0 0% 5%);
 }
 
