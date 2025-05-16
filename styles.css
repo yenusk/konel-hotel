@@ -375,6 +375,9 @@ img {
     margin-bottom: 8px;
     font-weight: 500;
 }
+.form-group label, .uu{
+    color: hwb(0 0% 5%);
+}
 
 .form-group input,
 .form-group select {
