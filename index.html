@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konel Hotel | Luxury Accommodation in the Heart of the City</title>
+    <meta name="description" content="Experience unparalleled luxury at Konel Hotel. Enjoy world-class amenities, exquisite dining, and exceptional service in the city center.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Konel<span>Hotel</span></a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Our Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="booking-btn">
+                    <a href="#booking" class="btn">Book Now</a>
+                </div>
+            </nav>
+            <div class="hamburger" aria-label="Menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Luxury Redefined</h1>
+                        <p>Experience the pinnacle of comfort and elegance at Konel Hotel</p>
+                        <a href="#booking" class="btn">Book Your Stay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Luxury Redefined</h1>
+                        <p>Experience the pinnacle of comfort and elegance at Konel Hotel</p>
+                        <a href="#booking" class="btn">Book Your Stay</a>
+                    </div>
+                </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Quick Booking Widget -->
+    <section class="quick-booking">
+        <div class="container">
+            <form class="booking-form" id="quickBookingForm">
+                <div class="form-group">
+                    <label for="check-in">Check In</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Check Out</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5+">5+ Guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="executive">Executive Suite</option>
+                        <option value="presidential">Presidential Suite</option>
+                        <option value="family">Family Room</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Check Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Rooms and Suites</h2>
+                <p>Each space is designed to provide the ultimate in comfort and luxury</p>
+            </div>
+            <div class="room-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Deluxe Room" loading="lazy">
+                        <div class="price">From $299/night</div>
+                    </div>
+                    <div class="room-details">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious rooms with city views, premium bedding, and modern amenities.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> King Bed</li>
+                            <li><i class="fas fa-ruler-combined"></i> 450 sq.ft.</li>
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                        </ul>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1648766426924-2f08483b30aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGV4ZWN1aXRlJTIwc3VpdGUlMjBmb3IlMjBob3RlbHxlbnwwfHwwfHx8MA%3D%3D" alt="Executive Suite" loading="lazy">
+                        <div class="price">From $499/night</div>
+                    </div>
+                    <div class="room-details">
+                        <h3>Executive Suite</h3>
+                        <p>Luxurious suite with separate living area, premium amenities, and panoramic views.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> King Bed</li>
+                            <li><i class="fas fa-ruler-combined"></i> 750 sq.ft.</li>
+                            <li><i class="fas fa-hot-tub"></i> Jacuzzi</li>
+                        </ul>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Presidential Suite" loading="lazy">
+                        <div class="price">From $899/night</div>
+                    </div>
+                    <div class="room-details">
+                        <h3>Presidential Suite</h3>
+                        <p>The epitome of luxury with expansive space, premium services, and breathtaking views.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> King Bed + Parlor</li>
+                            <li><i class="fas fa-ruler-combined"></i> 1200 sq.ft.</li>
+                            <li><i class="fas fa-concierge-bell"></i> Butler Service</li>
+                        </ul>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#rooms" class="btn outline">View All Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities" id="amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Discover our world-class facilities designed for your comfort and enjoyment</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Fine Dining</h3>
+                    <p>Experience culinary excellence at our award-winning restaurants and bars.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa and Wellness</h3>
+                    <p>Rejuvenate with our luxurious spa treatments and state-of-the-art fitness center.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Infinity Pool</h3>
+                    <p>Relax by our rooftop infinity pool with panoramic city views.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>High-Speed WiFi</h3>
+                    <p>Complimentary high-speed internet access throughout the hotel.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-business-time"></i>
+                    </div>
+                    <h3>Business Center</h3>
+                    <p>Fully equipped business facilities for our corporate guests.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Valet Parking</h3>
+                    <p>Complimentary valet parking for all hotel guests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Photo Gallery</h2>
+                <p>Explore the elegance and sophistication of Konel Hotel</p>
+            </div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rooms">Rooms</button>
+                <button class="filter-btn" data-filter="dining">Dining</button>
+                <button class="filter-btn" data-filter="spa">Spa</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="dining">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Restaurant" loading="lazy">
+                    
+                </div>
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Spa" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Space" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bathroom" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="dining">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Dining" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox">
+        <span class="close-lightbox" aria-label="Close lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Guest Experiences</h2>
+                <p>What our guests say about their stay at Konel Hotel</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The service at Konel Hotel was exceptional. From the moment we arrived, every staff member went above and beyond to make our stay memorable. The room was spacious and beautifully appointed."</p>
+                    <div class="guest-info">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson" loading="lazy">
+                        <div>
+                            <h4>Sara Kebede</h4>
+                            <span>Student at DDU</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The executive suite was absolutely stunning with panoramic city views. The attention to detail in every aspect of our stay was impressive. We'll definitely be returning!"</p>
+                    <div class="guest-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" loading="lazy">
+                        <div>
+                            <h4>Lencho Feyisa</h4>
+                            <span>Bussiness Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Perfect location for both business and leisure. The business center had everything I needed, and the spa was the perfect way to unwind after meetings. Highly recommend!"</p>
+                    <div class="guest-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emma Rodriguez" loading="lazy">
+                        <div>
+                            <h4>Samrawit F.</h4>
+                            <span>CEO of ride</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots"></div>
+                <button class="next-testimonial" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>About Konel Hotel</h2>
+                        <p>Where luxury meets exceptional service</p>
+                    </div>
+                    <p>Founded in 2020, Konel Hotel has established itself as the premier luxury destination in the heart of the city of DIRE DAWA. Our commitment to excellence has earned us numerous awards and the loyalty of discerning travelers from around the world.</p>
+                    <p>Every detail at Konel Hotel is carefully curated to provide an unforgettable experience. From our architecturally stunning building to our meticulously trained staff, we strive to exceed expectations at every turn.</p>
+                    <div class="awards">
+                        <div class="award">
+                            <i class="fas fa-award"></i>
+                            <span>Ethiopian Luxury Hotel Award 2023/24</span>
+                        </div>
+                        <div class="award">
+                            <i class="fas fa-award"></i>
+                            <span>Travel Guide 5-Star 2023</span>
+                        </div>
+                    </div>
+                    <a href="#about" class="btn outline">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Konel Hotel" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Address</h3>
+                        <p>Konel Street<br>Dire Dawa, Ethiopia</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>Reservations: +2519 123-4567<br>General Inquiries: +2519 123-0000</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>reservations@konelhotel.com<br>info@konelhotel.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.933173073031!2d41.85421481478621!3d9.58985699309247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1630a3f5b5f5b5f5%3A0x5f0a3f5b5f5b5f5!2sDire%20Dawa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Hotel Location"></iframe>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for exclusive offers and updates</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Konel Hotel</h4>
+                    <p>Experience the pinnacle of luxury and service at Konel Hotel, where every detail is designed for your comfort and enjoyment.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#amenities">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Dire Dawa, Ethiopia</li>
+                        <li><i class="fas fa-phone-alt"></i> +2519 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@konelhotel.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Konel Hotel. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="booking">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close booking modal">&times;</span>
+            <h2>Book Your Stay</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-check-in">Check In</label>
+                        <input type="date" id="modal-check-in" name="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-check-out">Check Out</label>
+                        <input type="date" id="modal-check-out" name="check-out" required>
+                    </div>
+                </div> <br>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-guests">Guests</label>
+                        <select id="modal-guests" name="guests" required>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5+">5+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-room-type">Room Type</label>
+                        <select id="modal-room-type" name="room-type" required>
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="executive">Executive Suite</option>
+                            <option value="presidential">Presidential Suite</option>
+                            <option value="family">Family Room</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="modal-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <button type="submit" class="btn">Complete Booking</button>
+                <div class="form-status"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
